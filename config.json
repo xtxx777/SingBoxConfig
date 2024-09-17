@@ -99,18 +99,18 @@
 
 
   "outbounds": [
-    { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "{all}","DIRECT" ] },
-    { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "{all}","🎯 全球直连" ] },
-    { "tag": "🎮 游戏服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
-    { "tag": "🪟 微软服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
-    { "tag": "🇬 谷歌服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
-    { "tag": "🍎 苹果服务", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
-    { "tag": "🎥 奈飞视频", "type": "selector", "outbounds": [ "{all}" ] },
-    { "tag": "📽️ 迪士尼+", "type": "selector", "outbounds": [ "{all}" ] },
-    { "tag": "🎞️ Max", "type": "selector", "outbounds": [ "{all}" ] },
-    { "tag": "🎬 Prime Video", "type": "selector", "outbounds": [ "{all}" ] },
-    { "tag": "🍎 Apple TV+", "type": "selector", "outbounds": [ "{all}" ] },
-    { "tag": "📹 油管视频", "type": "selector", "outbounds": [ "{all}" ] },
+    { "tag": "🚀 节点选择", "type": "selector", "outbounds": [ "DIRECT","{all}" ] },
+    { "tag": "🐟 漏网之鱼", "type": "selector", "outbounds": [ "🎯 全球直连","{all}" ] },
+    { "tag": "🎮 游戏服务", "type": "selector", "outbounds": [ "🚀 节点选择","🎯 全球直连" ] },
+    { "tag": "🪟 微软服务", "type": "selector", "outbounds": [ "🚀 节点选择","🎯 全球直连" ] },
+    { "tag": "🇬 谷歌服务", "type": "selector", "outbounds": ["🚀 节点选择","🎯 全球直连" ] },
+    { "tag": "🍎 苹果服务", "type": "selector", "outbounds": [ "🚀 节点选择","🎯 全球直连" ] },
+    { "tag": "🎥 奈飞视频", "type": "selector", "outbounds": [ "🚀 节点选择","{all}" ] },
+    { "tag": "📽️ 迪士尼+", "type": "selector", "outbounds": [ "🚀 节点选择","{all}" ] },
+    { "tag": "🎞️ Max", "type": "selector", "outbounds": [ "🚀 节点选择","{all}" ] },
+    { "tag": "🎬 Prime Video", "type": "selector", "outbounds": [ "🚀 节点选择","{all}" ] },
+    { "tag": "🍎 Apple TV+", "type": "selector", "outbounds": [ "🚀 节点选择","{all}" ] },
+    { "tag": "📹 油管视频", "type": "selector", "outbounds": [ "🚀 节点选择","{all}" ] },
     { "tag": "🇨🇳 直连域名", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
     { "tag": "🇨🇳 直连 IP", "type": "selector", "outbounds": [ "🎯 全球直连", "🚀 节点选择" ] },
     { "tag": "🪜 代理域名", "type": "selector", "outbounds": [ "🚀 节点选择", "🎯 全球直连" ] },
@@ -120,7 +120,7 @@
     { "tag": "🎯 全球直连", "type": "selector", "outbounds": ["DIRECT"] },
     { "tag": "REJECT", "type": "block" },
     { "tag": "DIRECT", "type": "direct" },
-    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT", "🚀 节点选择"] }
+    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "DIRECT", "REJECT"] }
   ],
   "route": {
     "rules": [
